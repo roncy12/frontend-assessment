@@ -1,0 +1,53 @@
+.heroSlide{
+    position: relative;
+    & img {
+        width: 100%;
+    }
+}
+
+.heroCarousel-content {
+    left: 0;
+    margin: 0 auto;
+    max-height: 80%;
+    overflow: auto;
+    padding: 2.25rem;
+    padding: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: auto;
+    text-align: center;
+    color: #fff;
+    & h1{
+        font-family: 'Roboto'
+    }
+}
+
+.heroCarousel-image-wrapper {
+    position: relative;
+}
+.heroCarousel-image-wrapper::after {
+    content: "";
+    background-color: #212326;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.heroCarousel-title {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.heroCarousel-description {
+    font-size: 20px;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    font-weight: 300;
+}

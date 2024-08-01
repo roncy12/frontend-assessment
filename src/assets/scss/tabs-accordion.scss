@@ -1,0 +1,86 @@
+.container {
+    font-family: Roboto;
+}
+  
+  .tabs .item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabs .item .tab {
+    cursor: pointer;
+    padding: 10px;
+    background: #f4f4f4;
+  }
+  
+  .tabs .item .content {
+    padding: 10px;
+    background: #fff;
+  }
+  
+  .accordion .item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion .item .accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background: #f4f4f4;
+  }
+  
+  .accordion .item .content {
+    padding: 10px;
+    background: #fff;
+    display: none;
+  }
+  
+  .accordion .item.active .content {
+    display: block;
+  }
+
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .tab.active {
+    background-color: white;
+    border-bottom: 2px solid #9eb25d;
+  }
+  
+
+  .tabAccordion-container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+
+/* For the accordion effect */
+.accordion-content {
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* When active, expand the accordion */
+.accordion-content.expanded {
+  max-height: 500px; 
+  opacity: 1;
+  padding: 1rem;
+}
+
+/* For the tab transition effect */
+.tab-content {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.tab-content.show {
+  opacity: 1;
+}
+.tab-content p {
+  margin-bottom: 1rem;
+}

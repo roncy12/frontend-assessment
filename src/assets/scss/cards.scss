@@ -1,0 +1,28 @@
+.gridCard {
+    max-width: 80%;
+    margin: 1rem auto 0;
+
+    & .cardItem {
+        border: 1px solid rgba(128 128 128 / 15%);
+        padding: 1.25rem;
+
+        & img{
+            border-radius: 0.5rem;
+        }
+
+        & .cardButton {
+            // width: 65%;
+            text-transform: uppercase;
+            margin: 1rem auto 0;
+            border-width: 2px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+            font-family: 'Roboto';
+        }
+        & .card-description {
+            margin: 1rem 0;
+        }
+    }
+
+}
